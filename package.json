@@ -1,0 +1,14 @@
+{
+  "name": "actuator-labs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "addACTRLiquidity": "bun examples/phuxTransactions.ts addACTRLiquidity",
+    "addHexComplexLiquidity": "bun examples/phuxTransactions.ts addHexComplexLiquidity",
+    "removeACTRLiquidity": "bun examples/phuxTransactions.ts removeACTRLiquidity",
+    "removeHexComplexLiquidity": "bun examples/phuxTransactions.ts removeHexComplexLiquidity"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4"
+  }
+}
