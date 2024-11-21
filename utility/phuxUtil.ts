@@ -30,7 +30,7 @@ export async function addLiquidity(params: AddLiquidityParams) {
       'uint256'    // minimumBPT
     ],
     [
-      JoinKind.EXACT_TOKENS_IN_FOR_BPT_OUT, 
+      JoinKind.EXACT_TOKENS_IN_FOR_BPT_OUT, // set to EXACT_TOKENS_IN_FOR_BPT_OUT for demonastration/simplicity but can be set as needed
       amounts, 
       1e6
     ],
@@ -76,7 +76,7 @@ export async function removeLiquidity(params: RemoveLiquidityParams) {
       'uint256'
     ],
     [
-      ExitKind.EXACT_BPT_IN_FOR_TOKENS_OUT, // Exit Kind
+      ExitKind.EXACT_BPT_IN_FOR_TOKENS_OUT, // set to EXACT_BPT_IN_FOR_TOKENS_OUT for demonastration/simplicity but can be set as needed
       params.lpAmount // amount of BPT to withdraw
     ],
   );
